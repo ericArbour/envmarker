@@ -108,7 +108,7 @@ function restore_options() {
           items.env_settings[i].address +
           '" /></td><td><input class="color jscolor" value="' +
           items.env_settings[i].color +
-          '" /></td></tr>';
+          '" /></td><td><button class="delete" title="Remove"></button></td></tr>';
         document.getElementById("tbody").appendChild(template);
         jscolor.installByClassName("jscolor");
         _addDeleteAction();
