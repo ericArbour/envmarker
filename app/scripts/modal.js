@@ -62,7 +62,6 @@ function _addEnvironmentLabel() {
             name: "EXAMPLE",
             address: "geovanneborges.com.br",
             color: "0000ff",
-            position: 1,
           },
         ],
         hosted_file: "",
@@ -105,24 +104,6 @@ function _addMarker(item) {
   var envmarker = document.getElementById("chrome-envmarker");
   if (envmarker && envmarker.length != 0) {
     envmarker.parentNode.removeChild(envmarker);
-  }
-  var positionStyle = "right: -72px; top: 45px; transform: rotate(45deg);";
-  var position = item.position || "1";
-  switch (position) {
-    case "1":
-      positionStyle = "right: -72px; top: 45px; transform: rotate(45deg);";
-      break;
-    case "2":
-      positionStyle = "left: -72px; top: 45px; transform: rotate(-45deg);";
-      break;
-    case "3":
-      positionStyle = "right: -72px; bottom: 45px; transform: rotate(-45deg);";
-      break;
-    case "4":
-      positionStyle = "left: -72px; bottom: 45px; transform: rotate(45deg);";
-      break;
-    default:
-      positionStyle = "right: -72px; top: 45px; transform: rotate(45deg);";
   }
   wrapperDiv = document.createElement("div");
   wrapperDiv.id = "chrome-envmarker";
